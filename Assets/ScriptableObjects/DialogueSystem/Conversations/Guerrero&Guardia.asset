@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467bbd4284737334ab6c08799067b599, type: 3}
+  m_Name: Guerrero&Guardia
+  m_EditorClassIdentifier: 
+  leftCharacter: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
+  rightCharacter: {fileID: 11400000, guid: 34729450a4013514b8eb5d5bcd441476, type: 2}
+  sentences:
+  - character: {fileID: 11400000, guid: 34729450a4013514b8eb5d5bcd441476, type: 2}
+    text: Valiente Guerrero, necesitas encontrar 2 llaves para pasar al siguiente
+      piso.
+  - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
+    text: Espero encontrarlos pronto.
+  - character: {fileID: 11400000, guid: 34729450a4013514b8eb5d5bcd441476, type: 2}
+    text: "Suerte extra\xF1o guerrero.\n"
