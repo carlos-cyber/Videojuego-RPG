@@ -152,7 +152,7 @@ TextureImporter:
         width: 76
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,6 +160,27 @@ TextureImporter:
       bones: []
       spriteID: 098adef6260ee7147b0034720172476b
       internalID: -1993686647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face_diablo
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 195
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ed74ad8feb7244b95a48720c65e9de
+      internalID: -887681448
       vertices: []
       indices: 
       edges: []
@@ -177,6 +198,7 @@ TextureImporter:
     nameFileIdTable:
       atlas_0: -1843513984
       atlas_1: -1993686647
+      face_diablo: -887681448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

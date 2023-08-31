@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467bbd4284737334ab6c08799067b599, type: 3}
+  m_Name: Guerrero&Abuelo
+  m_EditorClassIdentifier: 
+  leftCharacter: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
+  rightCharacter: {fileID: 11400000, guid: 93e486552b1f0324c9b771be1e6608f1, type: 2}
+  sentences:
+  - character: {fileID: 11400000, guid: 93e486552b1f0324c9b771be1e6608f1, type: 2}
+    text: Te pareces mucho a mi nieto cuando jugaba al ser un un valiente guerrero.
+  - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
+    text: "Recuerda que ser valiente tambi\xE9n significa pedir ayuda cuando la necesitas."
+  - character: {fileID: 11400000, guid: 93e486552b1f0324c9b771be1e6608f1, type: 2}
+    text: Pareces estar perdido, necesitas mover alguna estatua para poder seguir.
+  - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
+    text: "Gracias por la pista, intentar\xE9 moverla."

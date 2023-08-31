@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 467bbd4284737334ab6c08799067b599, type: 3}
+  m_Name: Guerrero&Brujo
+  m_EditorClassIdentifier: 
+  leftCharacter: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
+  rightCharacter: {fileID: 11400000, guid: 5b141f2c63753944d8f2f68f5df53f84, type: 2}
+  sentences:
+  - character: {fileID: 11400000, guid: 5b141f2c63753944d8f2f68f5df53f84, type: 2}
+    text: Hola aventurero.
+  - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
+    text: "Un gusto extra\xF1o brujo."
+  - character: {fileID: 11400000, guid: 5b141f2c63753944d8f2f68f5df53f84, type: 2}
+    text: Sabes que algunos objetos se pueden romper, velo por ti mismo.
+  - character: {fileID: 11400000, guid: 5b141f2c63753944d8f2f68f5df53f84, type: 2}
+    text: "Seguir\xE9 tu consejo."

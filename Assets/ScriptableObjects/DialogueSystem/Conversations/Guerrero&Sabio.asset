@@ -20,4 +20,7 @@ MonoBehaviour:
       porque hace sol y calor la mayor parte del a\xF1o. \xA1Es perfecto para disfrutar
       al aire libre!"
   - character: {fileID: 11400000, guid: 06329bc348a3c474aa6d3f1dd617335a, type: 2}
+    text: "\xA1Es perfecto para disfrutar al aire libre!porque hace sol y calor la
+      mayor parte del a\xF1o. \xA1Es perfecto para disfrutar al aire libre!"
+  - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
     text: "Interesante se\xF1or Sabio, ahora entiendo este clima tan c\xE1lido."

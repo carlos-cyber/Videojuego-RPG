@@ -22,5 +22,5 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
     text: Vengo a explorar estos misteriosos caminos.
   - character: {fileID: 11400000, guid: d68eff8e78209cb4b90a28d47497de04, type: 2}
-    text: "\xA1Suena genial!, tendr\xE1s que pasar por varios obst\xE1culos y te
-      llevaras grandes sorpresas."
+    text: "\xA1Suena genial!, para pasar al siguiente nivel tendr\xE1s que colocar
+      estos cubos en su lugar. "

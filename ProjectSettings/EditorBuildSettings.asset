@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Torre3.unity
     guid: 6a5fa70a6f4f05148b9ec6ec99abfff6
+  - enabled: 1
+    path: Assets/Scenes/Torre4.unity
+    guid: a144af7baa0229548a43f1348e4589e8
   m_configObjects: {}

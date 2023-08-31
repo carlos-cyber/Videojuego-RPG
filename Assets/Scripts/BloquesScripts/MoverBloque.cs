@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class MoveObjectAllDirections : MonoBehaviour
 {
-    public float moveSpeed = 2f; // Velocidad de movimiento del objeto
-
-    private Vector3 initialPosition; // Posición inicial del objeto
-    private Vector3 targetPosition; // Posición hacia la que se moverá el objeto
+    public float forceMagnitude = 0.5f; // Magnitud de la fuerza aplicada
     private bool isMoving = false; // Variable para controlar si el objeto está en movimiento
+    private Rigidbody2D rb2d; // Referencia al Rigidbody2D del objeto
 
     private void Start()
     {
-        initialPosition = transform.position; // Almacenar la posición inicial del objeto
+        rb2d = GetComponent<Rigidbody2D>(); // Obtener la referencia al Rigidbody2D
     }
 
     private void Update()
@@ -20,14 +18,7 @@ public class MoveObjectAllDirections : MonoBehaviour
         // Si el objeto está en movimiento
         if (isMoving)
         {
-            // Mover el objeto hacia la posición objetivo
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-
-            // Si el objeto llega a la posición objetivo, detener el movimiento
-            if (transform.position == targetPosition)
-            {
-                isMoving = false;
-            }
+            isMoving = false; // Detener el movimiento después de un cuadro
         }
     }
 
@@ -36,12 +27,13 @@ public class MoveObjectAllDirections : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Calcular una posición aleatoria a la que mover el objeto
-            float randomX = Random.Range(-5f, 5f); // Valor aleatorio en el rango -5 a 5
-            float randomY = Random.Range(-5f, 5f); // Valor aleatorio en el rango -5 a 5
-            targetPosition = new Vector3(initialPosition.x + randomX, initialPosition.y + randomY, initialPosition.z);
+            // Calcular la dirección de la colisión
+            Vector2 collisionDirection = (transform.position - collision.transform.position).normalized;
 
-            isMoving = true; // Iniciar el movimiento del objeto
+            // Aplicar una fuerza en la dirección de la colisión
+            rb2d.AddForce(collisionDirection * forceMagnitude, ForceMode2D.Impulse);
+
+            isMoving = true; // Marcar que el objeto está en movimiento
         }
     }
 }
