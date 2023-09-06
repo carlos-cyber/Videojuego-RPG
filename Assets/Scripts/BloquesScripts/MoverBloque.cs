@@ -1,12 +1,15 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveObjectAllDirections : MonoBehaviour
 {
     public float forceMagnitude = 0.5f; // Magnitud de la fuerza aplicada
-    private bool isMoving = false; // Variable para controlar si el objeto está en movimiento
+    private bool isMoving = false; // Variable para controlar si el objeto estï¿½ en movimiento
     private Rigidbody2D rb2d; // Referencia al Rigidbody2D del objeto
+
+    [Header("Sonido")]
+    [SerializeField] private AudioSource efectoSonido;
 
     private void Start()
     {
@@ -15,10 +18,11 @@ public class MoveObjectAllDirections : MonoBehaviour
 
     private void Update()
     {
-        // Si el objeto está en movimiento
-        if (isMoving)
+        // Si el objeto estaba en movimiento pero ya no lo estï¿½
+        if (isMoving && rb2d.velocity.magnitude < 0.01f)
         {
-            isMoving = false; // Detener el movimiento después de un cuadro
+            isMoving = false;
+            efectoSonido.Stop();
         }
     }
 
@@ -27,13 +31,14 @@ public class MoveObjectAllDirections : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Calcular la dirección de la colisión
+            // Calcular la direcciï¿½n de la colisiï¿½n
             Vector2 collisionDirection = (transform.position - collision.transform.position).normalized;
 
-            // Aplicar una fuerza en la dirección de la colisión
+            // Aplicar una fuerza en la direcciï¿½n de la colisiï¿½n
             rb2d.AddForce(collisionDirection * forceMagnitude, ForceMode2D.Impulse);
 
-            isMoving = true; // Marcar que el objeto está en movimiento
-        }
+            isMoving = true;
+            efectoSonido.Play();
+        }
     }
 }

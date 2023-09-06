@@ -19,6 +19,7 @@ public class GameStateListener : MonoBehaviour
     public UnityEvent onPlayingState;
     public UnityEvent onPauseState;
     public UnityEvent onDialogueState;
+    public UnityEvent onPausaPreguntaState;
 
     private void OnEnable()
     {
@@ -68,5 +69,8 @@ public class GameStateListener : MonoBehaviour
 
         if (newGameState.stateName == "Dialogue" && this.onDialogueState != null)
             this.onDialogueState.Invoke();
+
+        if (newGameState.stateName == "PausaPregunta" && this.onPausaPreguntaState != null)
+            this.onPausaPreguntaState.Invoke();
     }
 }
