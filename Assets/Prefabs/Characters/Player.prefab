@@ -251,6 +251,9 @@ MonoBehaviour:
   onDialogueState:
     m_PersistentCalls:
       m_Calls: []
+  onPausaPreguntaState:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4126044382179998835
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +364,7 @@ Transform:
   m_GameObject: {fileID: 6802572594465801054}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.13, y: 2.97, z: 0}
+  m_LocalPosition: {x: 0.01, y: 4.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -401,7 +404,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.5150645
+  m_Radius: 3.6924012
 --- !u!1 &8626913801349672249
 GameObject:
   m_ObjectHideFlags: 0
