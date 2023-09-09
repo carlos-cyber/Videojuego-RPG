@@ -22,8 +22,8 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 6e911317cd91d604c91360a8b556825d, type: 2}
     text: "En el desierto de Nazca, se encuentran enormes figuras geom\xE9tricas"
   - character: {fileID: 11400000, guid: 6e911317cd91d604c91360a8b556825d, type: 2}
-    text: "y dise\xF1os de animales trazados en la tierra.\nEstas \"l\xEDneas\" son
-      m\xE1s visibles desde el aire "
+    text: "y dise\xF1os de animales trazados en la tierra. Esta ubicado en la Regi\xF3n
+      de Ica.\nEstas \"l\xEDneas\" son m\xE1s visibles desde el aire "
   - character: {fileID: 11400000, guid: 6e911317cd91d604c91360a8b556825d, type: 2}
     text: "y su prop\xF3sito sigue siendo objeto de debate entre los arque\xF3logos
       y cient\xEDficos."

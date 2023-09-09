@@ -16,6 +16,9 @@ public class OrdenarCubos : MonoBehaviour
     [Header("Completados")]
     [SerializeField] public int completed = 0;
     public int count;
+    [SerializeField] public AudioSource sonidoPuerta;
+    [SerializeField] GameObject cerrado;
+    [SerializeField] GameObject abierto;
     private void Start()
     {
         count = CountElementsWithTag(tagToCount);
@@ -23,10 +26,7 @@ public class OrdenarCubos : MonoBehaviour
 
     private void Update()
     {
-        if (completed == count)
-        {
-            objeto.SetActive(true);
-        }
+      
     }
 
 
@@ -44,6 +44,14 @@ public class OrdenarCubos : MonoBehaviour
         if (collision.CompareTag(validTag))
         {
             completed++;
+
+            if (completed == count)
+            {
+                objeto.SetActive(true);
+                sonidoPuerta.Play();
+                cerrado.SetActive(false);
+                abierto.SetActive(true);
+            }
         }
     }
 
