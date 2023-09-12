@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Obstaculo
+  - Llave
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Player
   - Interaction
   - Obstaculo
-  - 
+  - Llave
   - 
   - 
   - 
