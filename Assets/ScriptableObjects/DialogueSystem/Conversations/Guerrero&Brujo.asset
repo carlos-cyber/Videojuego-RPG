@@ -20,6 +20,4 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
     text: "Un gusto extra\xF1o brujo."
   - character: {fileID: 11400000, guid: 5b141f2c63753944d8f2f68f5df53f84, type: 2}
-    text: Sabes que algunos objetos se pueden romper, velo por ti mismo.
-  - character: {fileID: 11400000, guid: 5b141f2c63753944d8f2f68f5df53f84, type: 2}
-    text: "Seguir\xE9 tu consejo."
+    text: Recuerda llevar los cubos a los lugares iluminados.

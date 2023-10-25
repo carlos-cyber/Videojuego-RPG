@@ -22,9 +22,10 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 44dc54a5128c69a46831ae1acd09876c, type: 2}
     text: Quisiera comer "Tacachos con cecina"
   - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
-    text: Que son, nunca habia escuchado ese tipo de comida.
+    text: "\xBFQue son?, nunca habia escuchado ese tipo de comida."
   - character: {fileID: 11400000, guid: 44dc54a5128c69a46831ae1acd09876c, type: 2}
-    text: "Es un plato que combina ingredientes caracter\xEDsticos de la selva peruana,
-      como el pl\xE1tano frito y la carne de cerdo."
+    text: "Es un plato que combina ingredientes caracter\xEDsticos de la selva peruana"
+  - character: {fileID: 11400000, guid: 44dc54a5128c69a46831ae1acd09876c, type: 2}
+    text: "como el pl\xE1tano frito y la carne de cerdo."
   - character: {fileID: 11400000, guid: c8e66c43c8615b842b5c278808b4374f, type: 2}
     text: Que rico, me antojo comer unos de esos.
